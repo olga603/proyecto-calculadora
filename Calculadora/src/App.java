@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class App {
     static void main() {
-        Scanner teclado = new Scanner(System.in);
+        Scanner lee = new Scanner(System.in);
         int opcion;
         double n1, n2;
 
@@ -14,13 +14,13 @@ public class App {
             System.out.println("4. Dividir");
             System.out.println("5. Salir");
             System.out.print("Selecciona una opción: ");
-            opcion = teclado.nextInt();
+            opcion = lee.nextInt();
 
             if (opcion >= 1 && opcion <= 4) {
                 System.out.print("Primer número: ");
-                n1 = teclado.nextDouble();
+                n1 = lee.nextDouble();
                 System.out.print("Segundo número: ");
-                n2 = teclado.nextDouble();
+                n2 = lee.nextDouble();
 
                 switch (opcion) {
                     case 1:
@@ -44,6 +44,6 @@ public class App {
         } while (opcion != 5);
 
         System.out.println("Programa finalizado.");
-        teclado.close();
+        lee.close();
     }
 }
